@@ -1,4 +1,4 @@
-package com.anvar.example.model;
+package com.app.mymvvm.model;
 
 import com.google.gson.annotations.SerializedName;
 

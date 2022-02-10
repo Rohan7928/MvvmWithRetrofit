@@ -1,4 +1,4 @@
-package com.anvar.example.adapter;
+package com.app.mymvvm.adapter;
 
 import android.content.Context;
 import android.view.LayoutInflater;
@@ -9,15 +9,15 @@ import android.widget.CheckBox;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.anvar.example.R;
-import com.anvar.example.model.Todo;
+import com.app.mymvvm.R;
+import com.app.mymvvm.model.Todo;
 
 import java.util.List;
 
 public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewHolder> {
 
-    private Context mContext;
-    private List<Todo> todos;
+    private final Context mContext;
+    private final List<Todo> todos;
 
     public TodoAdapter(Context mContext, List<Todo> todos) {
         this.mContext = mContext;
@@ -45,7 +45,7 @@ public class TodoAdapter extends RecyclerView.Adapter<TodoAdapter.TodoViewHolder
         return todos.size();
     }
 
-    class TodoViewHolder extends RecyclerView.ViewHolder {
+    static class TodoViewHolder extends RecyclerView.ViewHolder {
         CheckBox checkBox;
 
         TodoViewHolder(@NonNull View itemView) {

@@ -1,4 +1,4 @@
-package com.anvar.example.repos;
+package com.app.mymvvm.repos;
 
 import android.util.Log;
 
@@ -6,9 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 
-import com.anvar.example.api.TodoApi;
-import com.anvar.example.model.Todo;
-import com.anvar.example.util.ApiBuilder;
+import com.app.mymvvm.api.TodoApi;
+import com.app.mymvvm.model.Todo;
+import com.app.mymvvm.util.ApiBuilder;
 
 import java.util.List;
 
@@ -19,10 +19,10 @@ import retrofit2.Response;
 public class TodoRepository {
     private static final String TAG = "TodoRepository";
     private static final TodoRepository ourInstance = new TodoRepository();
-    private TodoApi api;
+    private final TodoApi api;
 
-    private MutableLiveData<List<Todo>> todoListLiveData = new MutableLiveData<>();
-    private MutableLiveData<Todo> todoLiveData = new MutableLiveData<>();
+    private final MutableLiveData<List<Todo>> todoListLiveData = new MutableLiveData<>();
+    private final MutableLiveData<Todo> todoLiveData = new MutableLiveData<>();
 
     public static TodoRepository getInstance() {
         return ourInstance;

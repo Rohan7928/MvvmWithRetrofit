@@ -1,18 +1,17 @@
-package com.anvar.example;
+package com.app.mymvvm;
 
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.anvar.example.adapter.TodoAdapter;
-import com.anvar.example.model.Todo;
-import com.anvar.example.vm.MainActivityViewModel;
+import com.app.mymvvm.adapter.TodoAdapter;
+import com.app.mymvvm.model.Todo;
+import com.app.mymvvm.vm.MainActivityViewModel;
 
 import java.util.List;
 import java.util.Objects;

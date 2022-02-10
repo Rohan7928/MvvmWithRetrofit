@@ -1,6 +1,6 @@
-package com.anvar.example.api;
+package com.app.mymvvm.api;
 
-import com.anvar.example.model.Todo;
+import com.app.mymvvm.model.Todo;
 
 import java.util.List;
 

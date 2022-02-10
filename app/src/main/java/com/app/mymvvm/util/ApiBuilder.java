@@ -1,4 +1,4 @@
-package com.anvar.example.util;
+package com.app.mymvvm.util;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
